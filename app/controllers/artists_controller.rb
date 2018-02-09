@@ -27,5 +27,6 @@ class ArtistsController < ApplicationController
     @artist.update(params.require(:artist).permit(:name, :bio))
     redirect_to artist_path(@artist)
   end
+  
 
 end
